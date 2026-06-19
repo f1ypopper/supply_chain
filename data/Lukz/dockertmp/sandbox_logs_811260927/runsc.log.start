@@ -1,0 +1,21 @@
+I0618 16:36:34.601460    2626 cli.go:210] **************** gVisor ****************
+I0618 16:36:34.601503    2626 cli.go:211] Version release-20260216.0, go1.25.5, amd64, 12 CPUs, linux, PID 2626, PPID 2468, UID 0, GID 0
+I0618 16:36:34.601510    2626 cli.go:213] Args: [/usr/bin/runsc --overlay2=none --root=/var/run/runsc --debug-log=/tmp/sandbox_logs_811260927/runsc.log.%COMMAND% --net-raw --strace --log-packets start ebfb7cb032abedc50ed91eb2ce31dfa848a173861c4b088645213ac2e4a8f992]
+I0618 16:36:34.601522    2626 config.go:466] Platform: systrap
+I0618 16:36:34.601533    2626 config.go:467] RootDir: /var/run/runsc
+I0618 16:36:34.601536    2626 config.go:468] FileAccess: exclusive / Directfs: true / Overlay: none
+I0618 16:36:34.601541    2626 config.go:469] Network: sandbox
+I0618 16:36:34.601545    2626 config.go:470] UseCPUNums: false
+I0618 16:36:34.601549    2626 config.go:472] Debug: false. Strace: true, max size: 1024, syscalls: 
+W0618 16:36:34.601553    2626 config.go:475] --allow-suid is disabled, SUID/SGID bits on executables will be ignored.
+I0618 16:36:34.601557    2626 cli.go:222] **************** gVisor ****************
+I0618 16:36:34.603993    2626 hostsettings.go:326] Host setting "/proc/sys/user/max_user_namespaces" is optimal
+I0618 16:36:34.604029    2626 hostsettings.go:326] Host setting "/proc/sys/kernel/unprivileged_userns_clone" is optimal
+I0618 16:36:34.604044    2626 hostsettings.go:326] Host setting "/proc/sys/kernel/unprivileged_userns_apparmor_policy" is optimal
+W0618 16:36:34.604048    2626 hostsettings.go:46] Host setting "/sys/kernel/mm/transparent_hugepage/shmem_enabled" (currently: "always within_size advise [never] deny force") is not optimal (turning on transparent hugepages support in shmem increases memory allocation performance); it is recommended to change it to "advise"
+W0618 16:36:34.604057    2626 hostsettings.go:46] Host setting "/sys/kernel/mm/transparent_hugepage/defrag" (currently: "always defer defer+madvise [madvise] never") is not optimal (disabling direct compaction improves page fault latency when hugepages are not immediately available); it is recommended to change it to "never"
+W0618 16:36:34.604061    2626 hostsettings.go:46] Host setting "/proc/sys/vm/max_map_count" (currently: "1048576") is not optimal (increasing max_map_count decreases the likelihood of host VMA exhaustion); it is recommended to change it to "4194304"
+I0618 16:36:34.604087    2626 network.go:56] Setting up network
+I0618 16:36:34.604143    2626 namespace.go:108] Applying namespace network at path "/proc/2583/ns/net"
+I0618 16:36:34.605249    2626 namespace.go:129] Restoring namespace network
+I0618 16:36:34.620723    2626 cli.go:242] Exiting with status: 0

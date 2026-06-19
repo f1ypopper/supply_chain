@@ -1,0 +1,25 @@
+I0619 01:39:29.045580    2587 cli.go:210] **************** gVisor ****************
+I0619 01:39:29.045633    2587 cli.go:211] Version release-20260216.0, go1.25.5, amd64, 12 CPUs, linux, PID 2587, PPID 2586, UID 0, GID 0
+I0619 01:39:29.045640    2587 cli.go:213] Args: [/usr/bin/runsc --overlay2=none --root=/var/run/runsc --debug-log=/tmp/sandbox_logs_48020970/runsc.log.%COMMAND% --net-raw --strace --log-packets create --bundle /var/lib/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata --pid-file /run/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/pidfile ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4]
+I0619 01:39:29.045652    2587 config.go:466] Platform: systrap
+I0619 01:39:29.045667    2587 config.go:467] RootDir: /var/run/runsc
+I0619 01:39:29.045670    2587 config.go:468] FileAccess: exclusive / Directfs: true / Overlay: none
+I0619 01:39:29.045675    2587 config.go:469] Network: sandbox
+I0619 01:39:29.045679    2587 config.go:470] UseCPUNums: false
+I0619 01:39:29.045683    2587 config.go:472] Debug: false. Strace: true, max size: 1024, syscalls: 
+W0619 01:39:29.045687    2587 config.go:475] --allow-suid is disabled, SUID/SGID bits on executables will be ignored.
+I0619 01:39:29.045691    2587 cli.go:222] **************** gVisor ****************
+I0619 01:39:29.058716    2587 namespace.go:198] Mapping host uid 0 to container uid 0 (size=4294967295)
+I0619 01:39:29.058752    2587 namespace.go:206] Mapping host gid 0 to container gid 0 (size=4294967295)
+I0619 01:39:29.060087    2587 container.go:1556] Gofer started, PID: 2595
+I0619 01:39:29.060308    2587 sandbox.go:975] Control socket path: "/var/run/runsc/runsc-ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4.sock"
+I0619 01:39:29.060344    2587 sandbox.go:1026] Sandbox will be started in new mount, IPC and UTS namespaces
+I0619 01:39:29.060373    2587 sandbox.go:1046] Sandbox will be started in the container's network namespace: {Type:network Path:/run/netns/cni-fb0e37a7-2774-2afe-c070-9a1110645d52}
+I0619 01:39:29.060390    2587 sandbox.go:1068] Sandbox will be started in container's user namespace: {Type:user Path:}
+I0619 01:39:29.060403    2587 namespace.go:198] Mapping host uid 0 to container uid 0 (size=4294967295)
+I0619 01:39:29.060408    2587 namespace.go:206] Mapping host gid 0 to container gid 0 (size=4294967295)
+I0619 01:39:29.060454    2587 sandbox.go:1105] Sandbox will be started in minimal chroot
+I0619 01:39:29.060598    2587 namespace.go:108] Applying namespace network at path "/run/netns/cni-fb0e37a7-2774-2afe-c070-9a1110645d52"
+I0619 01:39:29.061330    2587 namespace.go:129] Restoring namespace network
+I0619 01:39:29.061374    2587 sandbox.go:1331] Sandbox started, PID: 2596
+I0619 01:39:29.131918    2587 cli.go:242] Exiting with status: 0

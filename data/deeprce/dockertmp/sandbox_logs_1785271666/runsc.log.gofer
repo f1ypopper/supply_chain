@@ -1,0 +1,43 @@
+I0619 01:39:17.449431       1 cli.go:210] **************** gVisor ****************
+I0619 01:39:17.449498       1 cli.go:211] Version release-20260216.0, go1.25.5, amd64, 12 CPUs, linux, PID 1, PPID 0, UID 0, GID 0
+I0619 01:39:17.449509       1 cli.go:213] Args: [runsc-gofer --root=/var/run/runsc --debug-log=/tmp/sandbox_logs_1785271666/runsc.log.%COMMAND% --overlay2=none --net-raw=true --log-packets=true --strace=true --debug-log-fd=3 gofer --bundle /var/lib/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata --gofer-mount-confs=lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none --spec-fd=4 --mounts-fd=5 --rpc-fd=6 --io-fds=7 --io-fds=8 --io-fds=9 --io-fds=10 --io-fds=11 --io-fds=12 --io-fds=13 --sync-chroot-fd=14]
+I0619 01:39:17.449528       1 config.go:466] Platform: systrap
+I0619 01:39:17.449546       1 config.go:467] RootDir: /var/run/runsc
+I0619 01:39:17.449552       1 config.go:468] FileAccess: exclusive / Directfs: true / Overlay: none
+I0619 01:39:17.449559       1 config.go:469] Network: sandbox
+I0619 01:39:17.449566       1 config.go:470] UseCPUNums: false
+I0619 01:39:17.449571       1 config.go:472] Debug: false. Strace: true, max size: 1024, syscalls: 
+W0619 01:39:17.449578       1 config.go:475] --allow-suid is disabled, SUID/SGID bits on executables will be ignored.
+I0619 01:39:17.449583       1 cli.go:222] **************** gVisor ****************
+W0619 01:39:17.450892       1 gofer.go:467] Failed to copy /etc/localtime: open /etc/localtime: no such file or directory. UTC timezone will be used.
+I0619 01:39:17.450988       1 gofer.go:551] Mounting src: "/usr/libexec/podman/catatonit", dst: "/proc/fs/root/dev/init", flags: 0x1001
+I0619 01:39:17.457124       1 gofer.go:551] Mounting src: "/var/lib/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/shm", dst: "/proc/fs/root/dev/shm", flags: 0x1000
+I0619 01:39:17.457308       1 gofer.go:551] Mounting src: "/run/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/hostname", dst: "/proc/fs/root/etc/hostname", flags: 0x1000
+I0619 01:39:17.457459       1 gofer.go:551] Mounting src: "/run/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/.containerenv", dst: "/proc/fs/root/run/.containerenv", flags: 0x1000
+I0619 01:39:17.458394       1 gofer.go:551] Mounting src: "/run/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/resolv.conf", dst: "/proc/fs/root/etc/resolv.conf", flags: 0x1000
+I0619 01:39:17.458522       1 gofer.go:551] Mounting src: "/run/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata/hosts", dst: "/proc/fs/root/etc/hosts", flags: 0x1000
+I0619 01:39:17.459341       1 capability.go:66] Capabilities applied: { effective="chown, dac_override, dac_read_search, fowner, fsetid, sys_chroot" permitted="chown, dac_override, dac_read_search, fowner, fsetid, sys_chroot" inheritable="chown, dac_override, dac_read_search, fowner, fsetid, sys_chroot" bounding="chown, dac_override, dac_read_search, fowner, fsetid, sys_chroot" }
+I0619 01:39:17.459380       1 cmd.go:93] Execve "/proc/self/exe" again, bye!
+I0619 01:39:17.479157       1 cli.go:210] **************** gVisor ****************
+I0619 01:39:17.479190       1 cli.go:211] Version release-20260216.0, go1.25.5, amd64, 12 CPUs, linux, PID 1, PPID 0, UID 0, GID 0
+I0619 01:39:17.479197       1 cli.go:213] Args: [runsc-gofer --root=/var/run/runsc --debug-log=/tmp/sandbox_logs_1785271666/runsc.log.%COMMAND% --overlay2=none --net-raw=true --log-packets=true --strace=true --debug-log-fd=3 gofer --bundle=/var/lib/containers/storage/overlay-containers/ae6c4564abd8459417c82d3f765b14fc0acd86a7239ef833c816e3d99b0112b4/userdata --gofer-mount-confs=lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none,lisafs:none --io-fds=7,8,9,10,11,12,13 --mounts-fd=5 --rpc-fd=6 --spec-fd=4 --sync-chroot-fd=-1 --sync-userns-fd=-1 --proc-mount-sync-fd=22 --apply-caps=false --setup-root=false]
+I0619 01:39:17.479215       1 config.go:466] Platform: systrap
+I0619 01:39:17.479224       1 config.go:467] RootDir: /var/run/runsc
+I0619 01:39:17.479227       1 config.go:468] FileAccess: exclusive / Directfs: true / Overlay: none
+I0619 01:39:17.479232       1 config.go:469] Network: sandbox
+I0619 01:39:17.479236       1 config.go:470] UseCPUNums: false
+I0619 01:39:17.479240       1 config.go:472] Debug: false. Strace: true, max size: 1024, syscalls: 
+W0619 01:39:17.479244       1 config.go:475] --allow-suid is disabled, SUID/SGID bits on executables will be ignored.
+I0619 01:39:17.479248       1 cli.go:222] **************** gVisor ****************
+I0619 01:39:17.481336       1 gofer.go:280] Process chroot'd to "/root"
+I0619 01:39:17.481371       1 seccomp.go:67] Installing seccomp filters for 52 syscalls (action=[default])
+I0619 01:39:17.487290       1 seccomp.go:87] Seccomp filters installed.
+I0619 01:39:17.487319       1 gofer.go:339] Serving "/" mapped to "/root" on FD 7 (ro: false)
+I0619 01:39:17.487345       1 gofer.go:368] Serving "/dev/init" mapped on FD 8 (ro: true)
+I0619 01:39:17.487362       1 gofer.go:368] Serving "/dev/shm" mapped on FD 9 (ro: false)
+I0619 01:39:17.487374       1 gofer.go:368] Serving "/etc/hostname" mapped on FD 10 (ro: false)
+I0619 01:39:17.487385       1 gofer.go:368] Serving "/run/.containerenv" mapped on FD 11 (ro: false)
+I0619 01:39:17.487396       1 gofer.go:368] Serving "/etc/resolv.conf" mapped on FD 12 (ro: false)
+I0619 01:39:17.487408       1 gofer.go:368] Serving "/etc/hosts" mapped on FD 13 (ro: false)
+I0619 01:39:25.201590       1 gofer.go:392] All lisafs servers exited.
+I0619 01:39:25.201642       1 cli.go:242] Exiting with status: 0

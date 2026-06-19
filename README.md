@@ -1,4 +1,5 @@
 https://github.com/lxyeternal/pypi_malregistry
+https://github.com/DataDog/malicious-software-packages-dataset
 
 Analysis command (dry run)
 
